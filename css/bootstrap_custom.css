@@ -1,0 +1,43 @@
+// Accordion
+
+.panel-group .panel + .panel {
+    border-bottom: 8px solid #e77901;
+    margin-top: -6px;
+    position: relative;
+    z-index: 1;
+}
+.panel-group .panel:last-child {
+	border-bottom: none;
+}
+
+.list-group-item.active:hover, .list-group-item.active:focus {
+	background-color: #f5f5f5;
+	color: #242424;
+	border: none;
+	border-bottom: #DDDDDD 1px solid;
+}
+.panel > .list-group .list-group-item, .panel > .panel-collapse > .list-group .list-group-item {
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.panel > .list-group .list-group-item span, .panel > .panel-collapse > .list-group .list-group-item span {
+	border-bottom: dashed 1px #242424;
+}
+.panel > .list-group .list-group-item:hover span, .panel > .panel-collapse > .list-group .list-group-item:hover span {
+	border-bottom: dashed 1px transparent;
+}
+.panel-group .panel-title {
+	position: relative;
+}
+.panel-title a .btn {
+    background-color: transparent;
+    border: medium none;
+    border-radius: 0;
+    padding: 9px 12px;
+    position: absolute;
+    right: -16px;
+    top: -11px;
+    border-left: #B1B1B1 1px solid;
+}
+
+// accordion
